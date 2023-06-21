@@ -1,0 +1,24 @@
+.miniMap{
+    position: fixed;
+    right: 0;
+    opacity: 100%;
+    z-index: 99;
+    width: 150px;
+}
+
+.miniMap img{
+    width: 150px;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.miniCursor{
+    background-color: rgb(255, 0, 0);
+    position: fixed;
+    display: flex;
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    z-index: 99;
+    pointer-events: none;
+    display: block;
+}

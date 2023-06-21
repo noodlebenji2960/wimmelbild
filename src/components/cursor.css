@@ -1,0 +1,68 @@
+.targetArea{
+    border: 3px dotted rgb(255, 0, 0);
+    background-color: rgba(255, 0, 0, 0.2);
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    z-index: 99;
+    pointer-events: none;
+    animation: rotating 3s linear infinite;
+    display: none;
+}
+@keyframes rotating {
+    0% {
+      transform: scale(100%) rotate(0deg);
+    }
+    50% {
+      transform: scale(115%) rotate(180deg);
+    }
+    100% {
+      transform: scale(100%) rotate(360deg);
+    }
+}
+
+.cursorExpand{
+    animation: expand 0.5s linear forwards;
+}
+@keyframes expand {
+    0% {
+        transform: scale(0%);
+    }
+    50%{
+        transform: scale(175%);
+    }
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.cursorCollapse{
+    animation: collapse 0.1s linear forwards;
+}
+@keyframes collapse {
+    0% {
+        transform: scale(100%);
+    }
+    100% {
+        transform: scale(40%);
+    }
+}
+
+.cursorLocate{
+    animation: locate 0.2s linear forwards;
+}
+@keyframes locate {
+    0% {
+        background-color: rgba(255, 0, 0, 0.2);
+        transform: scale(100%);
+    }
+    50%{
+        background-color: rgb(255, 0, 0);
+        transform: scale(200%);
+    }
+    100% {
+        background-color: rgba(255, 0, 0, 0.2);
+        transform: scale(100%);
+    }
+}

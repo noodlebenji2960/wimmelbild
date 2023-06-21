@@ -1,0 +1,10 @@
+.gamePage{
+    overflow: hidden;
+    cursor: crosshair;
+    user-select: none;
+}
+
+.imageContainer img{
+    width: 3000px;
+    pointer-events: none;
+}

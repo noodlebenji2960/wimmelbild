@@ -1,0 +1,27 @@
+.selectionRectangle {
+    --1: 3px;
+    --2: 15px;
+    --3: -15px;
+    position: absolute;
+    height: 0px;
+    width: 0px;
+    background: 
+        linear-gradient(90deg, #FFFFFF 50%, transparent 0) repeat-x,
+        linear-gradient(90deg, #FFFFFF 50%, transparent 0) repeat-x,
+        linear-gradient(0deg, #FFFFFF 50%, transparent 0) repeat-y,
+        linear-gradient(0deg, #FFFFFF 50%, transparent 0) repeat-y;
+    background-size: var(--2) var(--1), var(--2) var(--1), var(--1) var(--2), var(--1) var(--2);
+    background-position: 0 0, 0 100%, 0 0, 100% 0;
+    animation: linearGradientMove 0.3s infinite linear;
+    pointer-events: none;
+  }
+
+  @keyframes linearGradientMove {
+    100% {
+        background-position: var(--2) 0, var(--3) 100%, 0 var(--3), 100% var(--2);
+    }
+  }
+
+  .darken{
+    outline: 9999px solid rgba(0, 0, 0, 0.5);
+  }

@@ -1,0 +1,5 @@
+.coordinates{
+    display: flex;
+    gap: 20px;
+    white-space: nowrap;
+}
